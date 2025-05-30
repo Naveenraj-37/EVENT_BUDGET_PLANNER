@@ -1,70 +1,116 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#  Welcome to the Event Budget Planner!
 
-## Available Scripts
+Planning an event can be stressful, especially when it comes to managing the budget. This application helps you stay on top of your expenses so you can focus on making your event amazing.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## What is this project about?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The Event Budget Planner is a full-stack web application designed to make budgeting for events easy and organized. Whether you're planning a wedding, a corporate meetup, or a birthday bash, this tool has got your back.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+You can create events, assign budgets to different categories, and keep track of your actual spending. Plus, the app includes a clean interface and a powerful backend to support user management, media uploads, and more.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##  What can you do with it?
 
-### `npm run build`
+Here’s a quick look at the features:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-  Create and manage event budgets with ease
+-  Compare your planned vs actual expenses
+-  Sign up and log in securely
+-  Send messages to the admin and get assistance
+-  Use a REST API to connect with other services or a frontend
+-  Upload and manage media files like package brochures or invoices
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##  Tech Stack Breakdown
 
-### `npm run eject`
+### Backend
+- **Django**: The core framework powering the backend
+- **Django REST Framework**: For building robust APIs
+- **SQLite / PostgreSQL**: Handles your data smoothly
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Frontend
+- **React (assumed)**: Interactive and dynamic user experience
+- **Node.js & npm**: Dependency management and build tools
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Others
+- Python 3.x
+- HTML, CSS, JavaScript
+- Virtual environment for Python dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+##  How to run the project
 
-## Learn More
+Let’s get you started quickly!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+###  Backend Setup
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Create a virtual environment:
+   ```bash
+   python -m venv env
+   source env/Scripts/activate  # or `source env/bin/activate` on Mac/Linux
+   ```
 
-### Code Splitting
+2. Install the required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Apply the database migrations:
+   ```bash
+   python manage.py makemigrations
+   python manage.py migrate
+   ```
 
-### Analyzing the Bundle Size
+4. Run the development server:
+   ```bash
+   python manage.py runserver
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+###  Frontend Setup
 
-### Making a Progressive Web App
+1. Open the frontend directory:
+   ```bash
+   cd frontend
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. Install all dependencies:
+   ```bash
+   npm install
+   ```
 
-### Advanced Configuration
+3. Fire up the frontend:
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Now you should have both frontend and backend up and running! 🚀
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+##  What’s next?
 
-### `npm run build` fails to minify
+We’re constantly thinking about how to make this app better. Here are a few ideas we might add in the future:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Export budgets as PDF reports
+- Get reminders or alerts for deadlines
+- Add payment gateway integration
+- Role-based access control
+
+---
+
+##  Who made this?
+
+This project was built with care by [Your Name]. Feel free to connect or suggest improvements!
+
+---
+
+##  License
+
+This project is under the MIT License — do whatever you want with it, just give credit.
+
