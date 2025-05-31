@@ -106,11 +106,7 @@ We’re constantly thinking about how to make this app better. Here are a few id
 
 ##  Who made this?
 
-This project was built with care by [Your Name]. Feel free to connect or suggest improvements!
+This project was built with care of web developer,Naveenraj J. Feel free to connect or suggest improvements!
 
----
 
-##  License
-
-This project is under the MIT License — do whatever you want with it, just give credit.
 
